@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Utiliser Flexbox pour une Mise en Page Responsive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- En-tête similaire à index.html -->
+    <header>
+        <div class="container">
+            <h1>Mes Astuces de Codage</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#home">Accueil</a></li>
+                    <li><a href="index.html#astuces">Astuces</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenu de l'Astuce -->
+    <section class="container">
+        <h2>Le positionnement en CSS</h2>
+        <div class="containerAstuce">
+        <h3><i class="fa-solid fa-code"></i> position</h3>
+        <p>
+            La propriété <span class="valeurPropriete">position</span> en CSS permet de définir la manière dont un élément est positionné 
+            dans le document, influençant son placement par rapport aux autres éléments et 
+            au conteneur parent. Elle est essentielle pour contrôler la disposition précise des éléments sur une page.<br>
+            Cette propriété peut avoir pour valeur:
+
+            <ul>
+            <li><i class="fa-solid fa-shield"></i><span class="valeurPropriete"> Static:</span> est le positionnement adopté par défaut.Il décrit 
+                comment les éléments sont positionnés naturellement dans l'ordre où ils sont définis dans le code HTML.
+            </li>
+            <li><i class="fa-solid fa-shield"></i><span class="valeurPropriete"> Relative:</span> L’élément est positionné par rapport à sa position normale.Il décrit 
+                comment les éléments sont positionnés naturellement dans le flux du document.
+            </li>
+            <li><i class="fa-solid fa-shield"></i><span class="valeurPropriete"> Absolute:</span> L'élément est retiré du flux normal du document et positionné par rapport à son parent positionné ou au viewport.
+            </li>
+            <li><i class="fa-solid fa-shield"></i><span class="valeurPropriete"> Fixed:</span> Similaire à absolute, mais l'élément est positionné par rapport au viewport. 
+                L'élement reste fixe meme en scrollant.
+            </li>
+            <li><i class="fa-solid fa-shield"></i><span class="valeurPropriete"> Sticky:</span> Combinaison de relative et fixed, l'élément commence en position relative et devient fixe après un certain seuil de défilement.
+            </li>
+            </ul>
+      </p>
+      </div>
+
+
+      <div class="containerNB">
+      
+        <h4>NB:</h4>
+            <p><i class="fa-solid fa-bookmark"></i> Les propriétés suivantes sont utilisées avec <strong>position</strong> pour définir précisément où un élément sera placé :
+            <ul>
+                <li><i class="fa-solid fa-diamond"></i><span class="valeurPropriete"> <strong>top :</strong> Distance depuis le bord supérieur de l'élément parent.</li>
+                <li><i class="fa-solid fa-diamond"></i><span class="valeurPropriete"> <strong>right :</strong> Distance depuis le bord droit de l'élément parent.</li>
+                <li><i class="fa-solid fa-diamond"></i><span class="valeurPropriete"> <strong>bottom :</strong> Distance depuis le bord inférieur de l'élément parent.</li>
+                <li><i class="fa-solid fa-diamond"></i><span class="valeurPropriete"> <strong>left :</strong> Distance depuis le bord gauche de l'élément parent.</li>
+            </ul>
+
+            <p>Ces propriétés sont utilisées uniquement si l'élément a une position <strong>autre que static</strong>.</p>
+            <p><i class="fa-solid fa-bookmark"></i> Utiliser un parent en position: <strong>relative</strong> pour contrôler le positionnement <strong>absolu</strong> de ses enfants.</p>
+      </p>
+      </div>
+
+      <div class="containerExemples">
+
+        <div class="exemple">
+            <h3>Exemple 1:Element absolu dans un parent relatif</h3>
+                <div class="code-simulation">
+                    <iframe width="100%" height="300" src="https://jsfiddle.net/rn5t13xf/embedded/html,css,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                </div>
+        </div> 
+
+        <div class="exemple">
+            <h3>Exemple 2:Menu fixe</h3>
+                <div class="code-simulation">
+                    <iframe width="100%" height="300" src="https://jsfiddle.net/6xrfbnew/4/embedded/html,css,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                </div>
+        </div> 
+
+        <div class="exemple">
+            <h3>Exemple 3:Position Sticky (collante)</h3>
+                <div class="code-simulation">
+                    <iframe width="100%" height="300" src="https://jsfiddle.net/ufdpkg5c/embedded/html,css,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                </div>
+        </div> 
+
+      </div>
+    
+  
+
+      <a href="float.html" class="next-page" aria-label="Page Suivante">
+        Page suivante:float
+      </a>
+        <!-- Ajoutez plus de contenu ici -->
+        <a href="index.html#astuces">Retour aux Astuces</a>
+    </section>
+</span>
+    <!-- Pied de Page similaire à index.html -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Fatin Chebab. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
